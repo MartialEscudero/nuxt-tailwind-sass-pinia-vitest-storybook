@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module",
+      "parser": "@typescript-eslint/parser"
+  },
+  "extends": [
+      "airbnb-base",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:vue/vue3-strongly-recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "overrides": [
+      {
+        "files": ["*.vue"],
+        "parser": "vue-eslint-parser"
+      }
+  ],
+  "rules": {
+    "vue/multi-word-component-names": "off",
+    "no-undef": "off",
+    "semi": ["error", "never"]
+  }
+}
